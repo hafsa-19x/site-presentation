@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #5db9e3;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(131, 59, 59, 0.1);
+    text-align: center;
+  }
+  .h1{
+    color: #1d479f;
+  }
+  
+  .photo {
+    width: 150px;
+    border-radius: 40%;
+    margin: 10px 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #5db9e3;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 60px;
+    color: #fff;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #83b0f8;
+    color: rgb(3, 6, 11);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  /*Résultat : quand tu passes la souris, le bouton semb*/
+  .btn:hover,
+.b1:hover {
+  background-color: #ef99e5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Ombre au hover */
+}
+
+  .b1 {
+    background-color: #81a7f9;
+    border: none;
+    border-radius: 9px;
+    margin: 10px;
+    padding: 12px 24px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .b1:hover {
+    background-color: #ef99e5;
+  }
+  /*Par défaut, tu utilises Arial, mais une belle police donne tout de suite un style plus pro !*/
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  /*Quand la page se charge, la boîte .container va apparaître en douceur 👌*/
+   @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .container {
+    animation: fadeIn 1s ease-out;
+  }
+  /*Grâce à ça, ton site reste lisible et joli sur téléphone ! */
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .photo {
+      width: 100px;
+    }
+  
+    li {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    h1, h3 {
+      font-size: 20px;
+    }
+  }
+  
